@@ -1,4 +1,4 @@
-Meera Font
+Karumbi Font
 ==========
 
 The Karumbi opentype font, is a Malayalam traditional script font.
