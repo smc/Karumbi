@@ -21,7 +21,7 @@ OS2Version: 2
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1201144321
-ModificationTime: 1458212359
+ModificationTime: 1458212464
 PfmFamily: 17
 TTFWeight: 400
 TTFWidth: 5
@@ -66,7 +66,7 @@ NameList: Adobe Glyph List
 DisplaySize: -72
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 504 21 8
+WinInfo: 987 21 8
 BeginPrivate: 0
 EndPrivate
 Grid
@@ -98164,7 +98164,7 @@ EndChar
 
 StartChar: k1cil
 Encoding: 1176 3455 1011
-Width: 1016
+Width: 619
 Flags: W
 LayerCount: 2
 Fore
@@ -98228,7 +98228,7 @@ EndChar
 
 StartChar: nhcil
 Encoding: 1177 3450 1012
-Width: 1319
+Width: 902
 Flags: W
 LayerCount: 2
 Fore
@@ -98319,7 +98319,7 @@ EndChar
 
 StartChar: n1cil
 Encoding: 1178 3451 1013
-Width: 903
+Width: 731
 Flags: W
 LayerCount: 2
 Fore
@@ -98388,7 +98388,7 @@ EndChar
 
 StartChar: l3cil
 Encoding: 1179 3453 1014
-Width: 1018
+Width: 745
 Flags: W
 LayerCount: 2
 Fore
@@ -98448,7 +98448,7 @@ EndChar
 
 StartChar: lhcil
 Encoding: 1180 3454 1015
-Width: 883
+Width: 609
 Flags: W
 LayerCount: 2
 Fore
@@ -98507,7 +98507,7 @@ EndChar
 
 StartChar: r3cil
 Encoding: 1181 3452 1016
-Width: 604
+Width: 552
 Flags: W
 LayerCount: 2
 Fore
