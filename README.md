@@ -15,9 +15,9 @@ Building from source
     ```
     pip install -r tools/requirements.txt
     ```
-3. Build the ttf, woff, woff2 files: 
-   ``` 
-   make
+3. Build the ttf, woff, woff2 files:
+   ```
+   make all
    ```
 
 Designer
@@ -27,4 +27,4 @@ Kevin & Siji (kevinsiji@gmail.com)
 License
 =======
 
-See COPYING file with the font.
+See LICENSE.txt file with the font.
