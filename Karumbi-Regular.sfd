@@ -21,7 +21,7 @@ OS2Version: 2
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1201144321
-ModificationTime: 1458241059
+ModificationTime: 1496737638
 PfmFamily: 17
 TTFWeight: 400
 TTFWidth: 5
@@ -51,7 +51,7 @@ OS2SupXOff: 0
 OS2SupYOff: 479
 OS2StrikeYSize: 50
 OS2StrikeYPos: 250
-OS2Vendor: 'anjl'
+OS2Vendor: 'SMC '
 OS2CodePages: 00000001.00000000
 OS2UnicodeRanges: 80800001.00002000.00000000.00000000
 Lookup: 260 0 0 "'abvm' Above Base Mark in Malay+AQEA-lam/Malay+AQEA-lam2 lookup 0" { "'abvm' Above Base Mark in Malay+AQEA-lam/Malay+AQEA-lam2 lookup 0 subtable"  } ['abvm' ('mlm2' <'dflt' > 'mlym' <'dflt' > ) ]
@@ -67,7 +67,7 @@ NameList: Adobe Glyph List
 DisplaySize: -72
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 972 18 7
+WinInfo: 387 43 14
 BeginPrivate: 0
 EndPrivate
 Grid
@@ -79,7 +79,7 @@ Grid
   Named: "sup-top"
 EndSplineSet
 TeXData: 1 0 0 256000 128000 85333 81408 512000 85333 783286 444596 497025 792723 393216 433062 380633 303038 157286 324010 404750 52429 2506097 1059062 262144
-AnchorClass2: "dotreph" "'abvm' Above Base Mark in Malay+AQEA-lam/Malay+AQEA-lam2 lookup 0 subtable" 
+AnchorClass2: "dotreph" "'abvm' Above Base Mark in Malay+AQEA-lam/Malay+AQEA-lam2 lookup 0 subtable"
 BeginChars: 1183 1140
 
 StartChar: .notdef
