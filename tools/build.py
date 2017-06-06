@@ -62,6 +62,35 @@ def validateGlyphs(font):
         if refs:
             glyph.references = refs
 
+        glyph.round()
+
+        # Hack, OTS rejects ligature carets!
+        glyph.lcarets = ()
+
+
+def fixGasp(font, value=15):
+    try:
+        table = font.get('gasp')
+        table.gaspRange[65535] = value
+    except:
+        print('ER: {}: no table gasp')
+
+
+def fixXAvgCharWidth(font):
+    """xAvgCharWidth should be the average of all glyph widths in the font"""
+    width_sum = 0
+    count = 0
+    for glyph_id in font['glyf'].glyphs:
+        width = font['hmtx'].metrics[glyph_id][0]
+        if width > 0:
+            count += 1
+            width_sum += width
+    if count == 0:
+        fb.error("CRITICAL: Found no glyph width data!")
+    else:
+        expected_value = int(round(width_sum) / count)
+    font['OS/2'].xAvgCharWidth = int(round(width_sum) / count)
+
 
 def opentype(infont, type, feature, version):
     font = fontforge.open(infont)
@@ -125,7 +154,12 @@ def opentype(infont, type, feature, version):
                 names.append(record)
 
     name.names = names
-
+    font['OS/2'].version = 4
+    # https://www.microsoft.com/typography/otspec/os2.htm#fst
+    font['OS/2'].fsType = 0
+    if args.type == 'ttf':
+        fixGasp(font)
+        fixXAvgCharWidth(font)
     # FFTM is FontForge specific, remove it
     del(font['FFTM'])
     # force compiling GPOS/GSUB tables by fontTools, saves few tens of KBs
